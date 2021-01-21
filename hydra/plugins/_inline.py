@@ -24,8 +24,8 @@ from telethon import Button, custom, events, functions
 from telethon.tl.functions.users import GetFullUserRequest
 
 from hydra import ALIVE_NAME, CMD_HELP, CMD_LIST, CUSTOM_PMPERMIT, bot
-from hydra.plugins import telestats
 from hydra.hydraConfig import Var
+from hydra.plugins import telestats
 
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 TELEPIC = (
@@ -123,7 +123,9 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 text=f"Hydra - Telegram Userbot.",
                 buttons=[
                     [
-                        Button.url("Repo", "https://github.com/noob-kittu/HydraUserbot"),
+                        Button.url(
+                            "Repo", "https://github.com/noob-kittu/HydraUserbot"
+                        ),
                         Button.url(
                             "Deploy",
                             "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fnoob-kittu%2FHydraUserbot&template=https%3A%2F%2Fgithub.com%2Fnoob-kittu%2FHydraUserbot",
@@ -140,7 +142,8 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                     [custom.Button.url("Creator👨‍🦱", "https://t.me/yourkittu")],
                     [
                         custom.Button.url(
-                            "👨‍💻Source Code‍💻", "https://github.com/noob-kittu/hydrauserbot"
+                            "👨‍💻Source Code‍💻",
+                            "https://github.com/noob-kittu/hydrauserbot",
                         ),
                         custom.Button.url(
                             "Deploy 🌀",
