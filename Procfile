@@ -1,1 +1,1 @@
-telebot: python -m Hydra
+hydra: python -m Hydra
