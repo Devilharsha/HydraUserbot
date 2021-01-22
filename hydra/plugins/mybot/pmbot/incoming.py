@@ -1,5 +1,5 @@
-#    TeleBot - UserBot
-#    Copyright (C) 2020 TeleBot
+#    hydra - UserBot
+#    Copyright (C) 2020 hydra
 
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
@@ -15,10 +15,10 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 # Incoming message checker.
-from telebot.plugins.mybot.sql.users_sql import add_user_to_db
-from telebot.plugins.mybot.sql.blacklist_sql import check_is_black_list
+from hydra.plugins.mybot.sql.users_sql import add_user_to_db
+from hydra.plugins.mybot.sql.blacklist_sql import check_is_black_list
 from telethon import events
-from telebot.plugins import OWNER_ID
+from hydra.plugins import OWNER_ID
 
 # if incoming
 

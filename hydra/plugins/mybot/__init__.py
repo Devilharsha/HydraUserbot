@@ -1,5 +1,5 @@
-#    TeleBot - UserBot
-#    Copyright (C) 2020 TeleBot
+#    hydra - UserBot
+#    Copyright (C) 2020 hydra
 
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
@@ -14,10 +14,10 @@
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-from telebot.plugins import OWNER_ID, TELE_NAME
+from hydra.plugins import OWNER_ID, TELE_NAME
 import time
 from datetime import datetime
-from telebot.telebotConfig import Var
+from hydra.hydraConfig import Var
 
 # start-other disabled
 startotherdis = """

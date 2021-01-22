@@ -1,5 +1,5 @@
-#    TeleBot - UserBot
-#    Copyright (C) 2020 TeleBot
+#    hydra - UserBot
+#    Copyright (C) 2020 hydra
 
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
@@ -14,10 +14,10 @@
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-from telebot.plugins.mybot.sql.blacklist_sql import all_bl_users
-from telebot.plugins.mybot.sql.userbase_sql import full_userbase
+from hydra.plugins.mybot.sql.blacklist_sql import all_bl_users
+from hydra.plugins.mybot.sql.userbase_sql import full_userbase
 from telethon import events
-from telebot.plugins import OWNER_ID
+from hydra.plugins import OWNER_ID
 
 
 @tgbot.on(events.NewMessage(pattern="^/stats", from_users=OWNER_ID))
